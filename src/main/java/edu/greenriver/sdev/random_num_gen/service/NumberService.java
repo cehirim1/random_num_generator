@@ -1,4 +1,4 @@
-package edu.greenriver.sdev.random_num_generator.service;
+package edu.greenriver.sdev.random_num_gen.service;
 
 import org.springframework.stereotype.Service;
 
@@ -7,8 +7,13 @@ import java.util.List;
 import java.util.Random;
 
 /**
- * This is class is the NumberService class that houses the Business Logic
- * of our program. The random number is generated here.
+ * @author Chisom E.
+ * @version 17
+ * Date 01/21/2023
+ *
+ *  This is the NumberService class that houses the Business Logic
+ *  * of our program. The random number is generated here and passed to the
+ *  * Controller which returns the data to the view (html file).
  */
 @Service
 public class NumberService {

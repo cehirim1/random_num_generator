@@ -1,12 +1,16 @@
-package edu.greenriver.sdev.random_num_generator.controller;
+package edu.greenriver.sdev.random_num_gen.controller;
 
-import edu.greenriver.sdev.random_num_generator.service.NumberService;
+import edu.greenriver.sdev.random_num_gen.service.NumberService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 
 /**
+ * @author Chisom E.
+ * @version 17
+ * Date 01/21/2023
+ *
  * The NumberController class.. and returns the request to the user.
  */
 @Controller

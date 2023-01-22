@@ -9,39 +9,12 @@
 <h1>Random Number Generator</h1>
 <main id="content">
 
- <!--  <section class="number">
-        <p th:text="${num1}"></p>
-    </section>
-
-
-    <section class="number">
-        <p th:text="${num2}"></p>
-    </section>
-
-
-    <section class="number">
-        <p th:text="${num3}"></p>
-    </section>
-
-
-    <section class="number">
-        <p th:text="${num4}"></p>
-    </section>
-
-
-    <section class="number">
-        <p th:text="${num5}"></p>
-    </section>
-
-
-    <section class="number">
-        <p th:text="${num6}"></p>
-    </section>-->
-
+    <!--randomly generates a list of numbers between 1 & 69 using a foreach loop-->
     <section th:each="num:${nums}" class="number">
         <p th:text="${num}"></p>
     </section>
 
+    <!--randomly generates a number between 1 & 20-->
     <section class="number">
         <p th:text="${num1}"></p>
     </section>
