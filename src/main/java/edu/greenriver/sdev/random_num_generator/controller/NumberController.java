@@ -17,10 +17,17 @@ public class NumberController {
         this.service = service;
     }
 
-    @RequestMapping()
+    @RequestMapping("/randnum")
     public String genNumber(Model modelVars){
 
         modelVars.addAttribute("num", service.between(1,20));
-        return "";
+        return "randnum";
+    }
+
+    @RequestMapping("/powerball")
+    public String genNumbers(Model modelBall){
+        modelBall.addAttribute("num", service.between(1,69));
+
+        return "powerball";
     }
 }
