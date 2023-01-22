@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+
 /**
  * The NumberController class.. and returns the request to the user.
  */
@@ -26,8 +27,19 @@ public class NumberController {
 
     @RequestMapping("/powerball")
     public String genNumbers(Model modelBall){
-        modelBall.addAttribute("num", service.between(1,69));
+
+        modelBall.addAttribute("nums", service.six(1,69));
+
+        modelBall.addAttribute("num1", service.between(1,20));
 
         return "powerball";
+    }
+
+    @RequestMapping("/numlist")
+    public String allNumbers(Model twenty){
+
+        twenty.addAttribute("nums", service.lists(1,69));
+
+        return "numlist";
     }
 }

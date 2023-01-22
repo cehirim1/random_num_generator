@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Numbers</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<h1>Random Number Generator</h1>
+<main id="content">
+
+ <!--  <section class="number">
+        <p th:text="${num1}"></p>
+    </section>
+
+
+    <section class="number">
+        <p th:text="${num2}"></p>
+    </section>
+
+
+    <section class="number">
+        <p th:text="${num3}"></p>
+    </section>
+
+
+    <section class="number">
+        <p th:text="${num4}"></p>
+    </section>
+
+
+    <section class="number">
+        <p th:text="${num5}"></p>
+    </section>
+
+
+    <section class="number">
+        <p th:text="${num6}"></p>
+    </section>-->
+
+    <section th:each="num:${nums}" class="number">
+        <p th:text="${num}"></p>
+    </section>
+
+    <section class="number">
+        <p th:text="${num1}"></p>
+    </section>
+</main>
+</body>
+</html>
