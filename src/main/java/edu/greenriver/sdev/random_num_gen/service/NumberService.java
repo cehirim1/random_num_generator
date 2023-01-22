@@ -12,20 +12,31 @@ import java.util.Random;
  * Date 01/21/2023
  *
  *  This is the NumberService class that houses the Business Logic
- *  * of our program. The random number is generated here and passed to the
+ *  * of our program. The random data is generated here and passed to the
  *  * Controller which returns the data to the view (html file).
  */
 @Service
 public class NumberService {
 
+    private static final int INT = 20;
+
+    /**
+     * @param low int low
+     * @param high int high
+     * @return random number between low and high
+     */
     public int between(int low, int high){
 
         Random number = new Random();
-        int rand = number.nextInt(low,high);
-        return rand;
+        return number.nextInt(low,high);
     }
 
 
+    /**
+     * @param low int low
+     * @param high int high
+     * @return a list of randomly generated numbers between low and high
+     */
     public List<Integer> six(int low, int high){
 
         List<Integer> numbers = new ArrayList<>();
@@ -40,12 +51,17 @@ public class NumberService {
     }
 
 
+    /**
+     * @param low int low
+     * @param high int high
+     * @return a list of randomly generated numbers between low and high
+     */
     public List<Integer> lists(int low, int high){
 
         List<Integer> random = new ArrayList<>();
                 Random number = new Random();
 
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < INT; i++) {
 
                 random.add(number.nextInt(low, high));
         }

@@ -9,13 +9,15 @@
 <h1>Random Number Generator</h1>
 <main id="content">
 
-    <!--randomly generates a list of numbers between 1 & 69 using a foreach loop-->
+    <!--displays a list of  randomly generated numbers between 1 & 69 using a foreach loop-->
+    <!--/*@thymesVar id="nums" type="templates"*/-->
     <section th:each="num:${nums}" class="number">
         <p th:text="${num}"></p>
     </section>
 
-    <!--randomly generates a number between 1 & 20-->
+    <!--displays randomly generated number between 1 & 20-->
     <section class="number">
+        <!--/*@thymesVar id="num1" type="templates"*/-->
         <p th:text="${num1}"></p>
     </section>
 </main>

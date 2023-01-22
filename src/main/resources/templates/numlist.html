@@ -9,6 +9,8 @@
 <h1>Random Number Generator</h1>
 <main id="content">
 
+    <!--displays a list of randomly generated numbers between 1 & 69 using a foreach loop-->
+    <!--/*@thymesVar id="nums" type="templates"*/-->
     <section th:each="num:${nums}" class="number">
         <p th:text="${num}"></p>
     </section>
