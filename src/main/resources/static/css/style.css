@@ -37,3 +37,17 @@ section.number {
 p {
     font-size: 3em;
 }
+
+#btn-primary{
+
+    background-color: #e18f8f;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+
+}
+
+.sect{
+    text-align: center;
+}

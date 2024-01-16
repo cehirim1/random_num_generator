@@ -1,9 +1,11 @@
 package edu.greenriver.sdev.random_num_gen.controller;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import edu.greenriver.sdev.random_num_gen.service.NumberService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 
 /**
@@ -63,8 +65,10 @@ public class NumberController {
     @SuppressWarnings("SpellCheckingInspection")
     @RequestMapping("/numlist")
     public String allNumbers(Model twenty){
-
         twenty.addAttribute("nums", service.lists(1, HIGH));
+
+
+
 
         return "numlist";
     }

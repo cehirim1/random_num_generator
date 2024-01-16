@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Random Numbers</title>
     <link href="css/style.css" rel="stylesheet">
+
 </head>
 <body>
 <h1>Random Number Generator</h1>
@@ -13,8 +14,34 @@
 
     <section class="number">
         <!--/*@thymesVar id="num" type="templates"*/-->
-        <p th:text="${num}"></p>
+        <p th:text="${num}" id="input"></p>
     </section>
+
 </main>
+<section class="sect">
+    <button id="btn-primary"  type="button"  >Click To Generate</button>
+</section>
+
+<script th:inline="javascript">
+    let btn = document.getElementById('btn-primary')
+    let input = document.getElementById('input');
+
+
+   btn.addEventListener('click', ()=>{
+
+     input.innerHTML = Math.floor(Math.random()*20)+1;
+     console.log(input.textContent)
+    })
+
+    /*]]>*/
+
+
+
+
+
+
+
+
+</script>
 </body>
 </html>
